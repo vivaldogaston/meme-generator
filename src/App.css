@@ -23,7 +23,77 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+div{
+  display: grid;
+  place-items: center;
+  margin:10px;
+}
+h1, .meme{
+  font-family: "Impact";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+form{
+display:flex;
+place-content: center;
+border:solid 0px black;
+max-width: 800px;
+margin: auto;
+margin-bottom: 20px;
+}
+.meme{
+  font-size: 2em;
+  position: relative;
+  
+}
+.topText, .bottomText{
+  text-align: center;
+  z-index: 1;
+}
 
+.topText{
+  position: absolute;
+  top: 0;
+}
+.bottomText{
+  bottom: 0;
+  position: absolute;
+}
+form button{
+  border: solid 3px #0c7bfa;
+  height: 38px;
+  width: 100px;
+  margin: 10px;
+  background: none;
+  border-radius: 5px;
+  cursor:pointer;
+
+}
+form button:hover{
+  background: #0c7bfa;
+  color: white;
+
+}
+form input{
+  
+  border: solid 3px #0c7bfa;
+  padding-left: 5px;
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
 .App-link {
   color: #61dafb;
 }
